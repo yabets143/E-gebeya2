@@ -33,6 +33,7 @@ function Navbar() {
   const handleSearchChange = async (e) => {
     const query = e.target.value;
     setSearchQuery(query);
+    
 
     if (query.trim()) {
       setLoading(true);

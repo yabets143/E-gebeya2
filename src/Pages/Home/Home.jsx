@@ -19,14 +19,14 @@ function Home() {
   useEffect(() => {
     // Check if the user is an admin when the component mounts
     const checkAdminStatus = async () => {
-      const adminStatus = isAdmin(); // Call the function to check admin status
-      setIsAdminUser(adminStatus); // Update the state
+      const adminStatus = isAdmin(); 
+      setIsAdminUser(adminStatus); 
     };
     checkAdminStatus();
   }, []);
   return (
     <div>
-      {isAdminUser ? <p>Welcome admin</p> : <p>Welcome, {userName}!</p>}
+      {isAdminUser ? <p>Welcome admin</p> : <p>Welcome, {userName}</p>}
       <ProductManager/>
       <Contact/>
     </div>
